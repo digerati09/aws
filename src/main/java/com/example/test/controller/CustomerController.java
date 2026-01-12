@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class CustomerController {
     private final CustomerService customerService;
-
+    // GetMapping - customers
     @GetMapping("/customers")
     public String customers(Model model){
         model.addAttribute("customers", customerService.getCustomers());
