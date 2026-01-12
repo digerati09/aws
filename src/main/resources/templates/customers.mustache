@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Customers</title>
+</head>
+<body>
+<h2>고객 목록</h2>
+
+<table border="1">
+    <tr>
+        <th>이름</th>
+        <th>전화번호</th>
+    </tr>
+    {{#customers}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{phone}}</td>
+        </tr>
+    {{/customers}}
+</table>
+</body>
+</html>
