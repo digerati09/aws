@@ -10,7 +10,7 @@ public class ResponseGetCustomer {
     private String phone;
     private String memo;
     private String createdAt;
-
+    // 생성자
     public ResponseGetCustomer(Customer customer){
         this.id = customer.getId();
         this.name = customer.getName();
